@@ -1,0 +1,117 @@
+/* NAVBAR */
+.navbar {
+  background: #1c1c1c; /* fallback for old browsers */
+  background: rgba(28, 28, 28, 1);
+  background: -moz-linear-gradient(
+    top,
+    rgba(28, 28, 28, 1) 0%,
+    rgba(32, 32, 32, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(28, 28, 28, 1) 0%,
+    rgba(32, 32, 32, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(28, 28, 28, 1) 0%,
+    rgba(32, 32, 32, 1) 100%
+  );
+  border-bottom: 1px solid rgba(126, 138, 150, 0.2);
+}
+.navbar .navbar-brand {
+  justify-content: center;
+  margin-right: 2rem;
+  min-width: 150px;
+  position: relative;
+  z-index: 4;
+}
+.navbar .navbar-item {
+  background-color: transparent !important;
+}
+.navbar .navbar-start .navbar-item {
+  color: #7e8a96 !important;
+  font-size: 12pt;
+  font-weight: bold;
+  letter-spacing: 2.59pt;
+  padding: 2rem 1rem;
+  text-transform: uppercase;
+}
+.navbar .navbar-start .navbar-item:hover,
+.navbar .navbar-start .navbar-item:active,
+.navbar .navbar-start .navbar-item.is-active {
+  background-color: transparent !important;
+  -webkit-box-shadow: inset 0px 4px 0px 0px rgba(32, 215, 252, 1) !important;
+  -moz-box-shadow: inset 0px 4px 0px 0px rgba(32, 215, 252, 1) !important;
+  box-shadow: inset 0px 4px 0px 0px rgba(32, 215, 252, 1) !important;
+  color: #ffffff !important;
+}
+.navbar .navbar-end .select:after {
+  border-color: #ffffff !important;
+}
+.navbar .navbar-end .select select {
+  background: #1c1c1c;
+  border: 1px solid #7e8a96;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 2.56pt;
+}
+
+.navbar .navbar-addon {
+  align-items: center;
+  background: #1c1c1c;
+  bottom: -0.9rem;
+  border: 1px solid rgba(126, 138, 150, 0.5);
+  border-radius: 15px;
+  display: grid;
+  font-size: 12pt;
+  font-weight: bold;
+  grid-template-columns: repeat(3, 1fr);
+  height: 1.8rem;
+  justify-items: center;
+  letter-spacing: 2.56pt;
+  position: absolute;
+  right: 15vw;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-addon .addon-item {
+  padding: 0.25rem 1rem;
+}
+
+.navbar .navbar-addon .addon-item:hover,
+.navbar .navbar-addon .addon-item:active,
+.navbar .navbar-addon .addon-item.is-active {
+  color: #20d7fc;
+  cursor: pointer;
+}
+.navbar .navbar-addon .addon-item.is-active:before {
+  border-radius: 50%;
+  background: #20d7fc;
+  content: "\A";
+  display: inline-block;
+  height: 12pt;
+  width: 12pt;
+  margin: 0pt -20pt;
+  position: absolute;
+}
+
+/* SCALING */
+@media screen and (max-width: 1087px) {
+  .navbar {
+    background: #1c1c1c !important;
+    border-bottom: 1px solid #1c1c1c;
+  }
+  .navbar .navbar-brand {
+    border-bottom: none !important;
+  }
+
+  .navbar .navbar-addon {
+    bottom: -1.8rem;
+    border: none;
+    border-radius: 0;
+    left: 50%;
+    margin-left: -50%;
+    right: 0;
+  }
+}

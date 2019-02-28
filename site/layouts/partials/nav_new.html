@@ -1,0 +1,72 @@
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="#">
+      <img src="/img/livionkey-logo.svg" />
+    </a>
+
+    <a
+      role="button"
+      class="navbar-burger burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a
+        href="/livionkey-30"
+        class="navbar-item{{if eq .URL `/livionkey-30/`}} is-active{{ end }}"
+        >LivionKey-30</a
+      >
+      <a
+        href="/values"
+        class="navbar-item{{if eq .URL `/livionkey-1/`}} is-active{{ end }}"
+        >LivionKey-1</a
+      >
+      <a
+        href="/blog"
+        class="navbar-item{{if eq .URL `/compare/`}} is-active{{ end }}"
+        >Vertaile</a
+      >
+      <a
+        href="/support"
+        class="navbar-item{{if eq .URL `/support/`}} is-active{{ end }}"
+      >
+        Tuki
+      </a>
+      <a
+        href="/contact"
+        class="navbar-item{{if eq .URL `/contact/`}} is-active{{ end }}"
+      >
+        Yhteystiedot
+      </a>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <div class="select is-rounded is-small">
+            <select>
+              <option>FI</option>
+              <option>SV</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar-addon">
+    <div class="addon-item{{if eq .URL `/livionkey-30/`}} is-active{{ end }}">
+      Esittely
+    </div>
+    <div class="addon-item">Tekniset Tiedot</div>
+    <div class="addon-item">Ohjelmisto</div>
+  </div>
+</nav>

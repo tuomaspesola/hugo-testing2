@@ -1,0 +1,11 @@
+body {
+  font-family: "PT Sans";
+}
+
+.is-dark {
+  background-color: #1c1c1c !important;
+}
+
+.button {
+  padding: 1.5rem 3rem !important;
+}

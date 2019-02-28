@@ -1,0 +1,129 @@
+.row {
+  height: auto;
+  padding: 0;
+  position: relative;
+}
+
+.row .row-bg {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.row .columns {
+  align-items: center;
+  margin-top: 0;
+  position: relative;
+  z-index: 3;
+}
+
+.row .columns .column {
+  padding: 1vh 3vw;
+}
+.row .columns .column img {
+  display: block;
+  margin: 0 auto;
+  padding: 4vh 4vw;
+}
+.row .columns .column .text-block {
+  display: block;
+  height: min-content;
+  justify-items: center;
+  padding: 0.5rem 15vw;
+  position: relative;
+  z-index: 3;
+}
+.row .columns .column .text-block .heading {
+  font-family: "PT Serif", serif;
+  color: #484848;
+  font-size: 57pt;
+  font-weight: bold;
+  letter-spacing: 1.33pt;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: none;
+}
+
+.row .columns .column .text-block .content {
+  color: #5d5d5d;
+  font-size: 28pt;
+  letter-spacing: 0.82pt;
+  line-height: 41pt;
+  text-align: center;
+}
+
+.row .columns .column .text-block .button {
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 15pt;
+  letter-spacing: 0.5pt;
+  padding: 2rem 3rem !important;
+  text-transform: uppercase;
+}
+
+/* TOP ROW STYLING */
+.row.top {
+  margin-bottom: 3rem;
+  min-height: 500px;
+}
+
+.row.top .columns {
+  align-items: start;
+  padding-top: 4rem;
+}
+.row.top .columns .column:last-child {
+  padding: 1rem 0;
+}
+.row.top .columns .column .text-block {
+  justify-items: left;
+  margin-top: 3rem;
+  padding: 0;
+}
+.row.top .columns .column .text-block .heading {
+  color: #ffffff;
+  border-bottom: 5px solid #20d7fc;
+  font-family: "PT Serif", serif;
+  font-size: 57pt;
+  font-weight: bold;
+  letter-spacing: 3.71pt;
+  text-align: left;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem !important;
+}
+.row.top .columns .column .text-block .content {
+  color: #ffffff;
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 16pt;
+  font-weight: normal;
+  letter-spacing: 0.53pt;
+  line-height: 23pt;
+  padding: 0.5rem 0.2rem;
+  text-align: left;
+}
+
+/* SCALING */
+@media screen and (max-width: 1087px) {
+  .row .row-bg {
+    height: 50%;
+  }
+
+  .row .columns {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    margin: 0;
+  }
+
+  /* SCALING: TOP ROW STYLING  */
+  .row.top .columns .column {
+    padding: 1rem 3vw !important;
+  }
+  .row.top .columns .column .text-block .heading {
+    color: #484848;
+    border-bottom: none;
+  }
+
+  .row.top .columns .column .text-block .content {
+    color: #5d5d5d;
+  }
+}
