@@ -160,6 +160,6 @@
   }
 
   .navbar .navbar-menu .navbar-end {
-    grid-area: language-switch;
+    display: none;
   }
 }

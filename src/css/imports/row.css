@@ -174,4 +174,10 @@
   .row.top .columns .column .text-block .content {
     color: #5d5d5d;
   }
+  .row.top .columns.single{
+    padding-top: 0;
+  }
+  .row.top .columns.single .column .text-block .heading{
+    color: #ffffff;
+  }
 }
