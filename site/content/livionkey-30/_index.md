@@ -4,9 +4,9 @@ type: livionkey-30
 sections:
   section_1:
     columns:
-      image:
-        url: /img/keybox30.png
-        alt: KeyBox30-image
+      image: 
+        image: /img/keybox30.png
+        alt: keybox30.png
       text:
         heading: LivionKey-30
         body: >
@@ -22,12 +22,12 @@ sections:
         link: /contact
   section_4:
     columns:
-      - image:
-        url: /img/livion-box-example.png
-        alt: LivionBoxExample
-      - image:
-        url: /img/livion-software.jpg
-        alt: LivionSoftwareExample
+      image1: 
+        image: /img/livion-box-example.png 
+        alt: livionBoxExample
+      image2: 
+        image: /img/livion-software.jpg
+        alt: livionSoftware 
   section_5:
     columns:
       text:

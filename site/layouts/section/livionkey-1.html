@@ -5,4 +5,5 @@
 {{ $.Scratch.Set "i" (add ($.Scratch.Get "i") 1) }}
 {{partial "row_new" (dict "i" ($.Scratch.Get "i") "columns" .columns)}}
 {{ end }}
+
 {{ end }}

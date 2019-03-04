@@ -18,38 +18,61 @@
     rgba(32, 32, 32, 1) 100%
   );
   border-bottom: 1px solid rgba(126, 138, 150, 0.2);
+  position: relative;
 }
 .navbar .navbar-brand {
   justify-content: center;
   margin-right: 2rem;
   min-width: 150px;
-  position: relative;
-  z-index: 4;
 }
+.navbar .navbar-brand .buttons-mobile {
+  display: none;
+}
+.navbar .navbar-brand .buttons-mobile .select select {
+  border-color: transparent;
+}
+
 .navbar .navbar-item {
   background-color: transparent !important;
 }
 .navbar .navbar-start .navbar-item {
   color: #7e8a96 !important;
-  font-size: 12pt;
+  font-size: 8pt;
   font-weight: bold;
   letter-spacing: 2.59pt;
   padding: 2rem 1rem;
   text-transform: uppercase;
 }
-.navbar .navbar-start .navbar-item:hover,
-.navbar .navbar-start .navbar-item:active,
-.navbar .navbar-start .navbar-item.is-active {
+.navbar .navbar-menu:not(.is-active) .navbar-start .navbar-item:hover,
+.navbar .navbar-menu:not(.is-active) .navbar-start .navbar-item:active,
+.navbar .navbar-menu:not(.is-active) .navbar-start .navbar-item.is-active {
   background-color: transparent !important;
   -webkit-box-shadow: inset 0px 4px 0px 0px rgba(32, 215, 252, 1) !important;
   -moz-box-shadow: inset 0px 4px 0px 0px rgba(32, 215, 252, 1) !important;
   box-shadow: inset 0px 4px 0px 0px rgba(32, 215, 252, 1) !important;
   color: #ffffff !important;
 }
-.navbar .navbar-end .select:after {
+/* FOR WHEN MOBILE NAVBAR MENU IS OPEN */
+.navbar .navbar-menu.is-active {
+  background-color: #1c1c1c;
+}
+.navbar .navbar-menu.is-active .navbar-start .navbar-item:hover,
+.navbar .navbar-menu.is-active .navbar-start .navbar-item:active,
+.navbar .navbar-menu.is-active .navbar-start .navbar-item.is-active {
+  color: #ffffff !important;
+}
+.navbar .navbar-menu.is-active .navbar-start .navbar-item.is-active:before {
+  content: ">";
+  display: inline-block;
+  height: 12pt;
+  width: 12pt;
+  position: relative;
+}
+
+.navbar .buttons .select:after {
   border-color: #ffffff !important;
 }
-.navbar .navbar-end .select select {
+.navbar .buttons .select select {
   background: #1c1c1c;
   border: 1px solid #7e8a96;
   color: #ffffff;
@@ -64,7 +87,7 @@
   border: 1px solid rgba(126, 138, 150, 0.5);
   border-radius: 15px;
   display: grid;
-  font-size: 12pt;
+  font-size: 8pt;
   font-weight: bold;
   grid-template-columns: repeat(3, 1fr);
   height: 1.8rem;
@@ -90,9 +113,9 @@
   background: #20d7fc;
   content: "\A";
   display: inline-block;
-  height: 12pt;
-  width: 12pt;
-  margin: 0pt -20pt;
+  height: 8pt;
+  width: 8pt;
+  margin: 0pt -15pt;
   position: absolute;
 }
 
@@ -103,7 +126,28 @@
     border-bottom: 1px solid #1c1c1c;
   }
   .navbar .navbar-brand {
+    align-items: center;
     border-bottom: none !important;
+    display: grid;
+    grid-template-areas: "burger logo language-switch";
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin: 0;
+    position: relative;
+    padding: 0 3rem;
+  }
+  .navbar .navbar-brand .navbar-logo {
+    grid-area: logo;
+  }
+  .navbar .navbar-brand .navbar-burger {
+    justify-self: start !important;
+    grid-area: burger;
+    margin: 0;
+  }
+  .navbar .navbar-brand .buttons-mobile {
+    display: inline-block;
+    grid-area: language-switch;
+    justify-self: end;
   }
 
   .navbar .navbar-addon {
@@ -113,5 +157,9 @@
     left: 50%;
     margin-left: -50%;
     right: 0;
+  }
+
+  .navbar .navbar-menu .navbar-end {
+    grid-area: language-switch;
   }
 }

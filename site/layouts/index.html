@@ -1,13 +1,8 @@
 {{ define "main" }}
+{{ $.Scratch.Set "i" 0 }}
 
-<!-- {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
-
-{{ partial "short-text" .Params.blurb}}
-
-{{ partial "2-up" .Params }}
-
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
-
-{{ partial "blog" . }} -->
-
+{{ range.Params.sections }}
+{{ $.Scratch.Set "i" (add ($.Scratch.Get "i") 1) }}
+{{partial "row_new" (dict "i" ($.Scratch.Get "i") "columns" .columns)}}
+{{ end }}
 {{ end }}

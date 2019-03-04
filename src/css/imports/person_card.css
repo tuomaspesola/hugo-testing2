@@ -1,0 +1,19 @@
+.person-card{
+    display: grid;
+    grid-template-columns: 150px max-content;
+    position: relative;
+    width: min-content;
+}
+.person-card .card-image{
+    align-self: center;
+}
+.person-card .card-image img{
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.30);
+}
+.person-card .card-content .subtitle{
+    margin-bottom: 0.3rem;
+}

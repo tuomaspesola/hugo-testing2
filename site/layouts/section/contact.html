@@ -1,24 +1,21 @@
 {{ define "main" }}
-
-<div class="ph3 bg-off-white">
-	<div class="center mw6 pv3">
-
-		<img src="{{ .Params.logo }}" alt="" class="db w4 center pv4">
-
-		{{ .Content }}
-
-		<div class="flex-ns mb3">
-	        	{{ range .Params.contact_entries }}
-				<div>
-					<h4 class="f4 b lh-title mb2 primary">{{ .heading }}</h4>
-					<p>{{ .text }}</p>
-				</div>
-			{{ end }}
-		</div>
-
-		{{ partial "contact-form" . }}
-
-	</div>
+<div class="row top">
+    <div class="row-bg">
+        <svg width="100%" height="100%" viewBox="0 0 20 10" preserveAspectRatio="none">
+            <polygon fill="#1c1c1c" stroke-width="0" points="0,6 20,10 20,0 0,0" />
+        </svg>
+    </div>
+    <div class="columns is-centered single">
+        <div class="column">
+            <div class="text-block">
+                <h1 class="heading">{{.Title}}</h1>
+            </div>
+        </div>
+    </div>
 </div>
-
+<div class="row contact-row">
+    {{ range.Params.persons }}
+    {{partial "person_card" .}}
+    {{ end }}
+</div>
 {{ end }}

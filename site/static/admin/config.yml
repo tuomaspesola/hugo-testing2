@@ -17,100 +17,154 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages"
     label: "Pages"
-    create: true # Allow users to create new documents in this collection
     files:
       - file: "site/content/_index.md"
         label: "Home Page"
         name: "home"
         fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Subtitle, name: subtitle, widget: string }
-          - { label: Image, name: image, widget: image }
-          - {
-              label: "Blurb",
-              name: blurb,
-              widget: object,
-              fields:
-                [
-                  { label: "Heading", name: "heading", widget: string },
-                  { label: "Text", name: "text", widget: "text" },
-                ],
-            }
-          - {
-              label: "Intro",
-              name: intro,
-              widget: object,
-              fields:
-                [
-                  { label: "Heading", name: "heading", widget: string },
-                  { label: "Text", name: "text", widget: "text" },
-                ],
-            }
-          - {
-              label: "Products",
-              name: products,
-              widget: list,
-              fields:
-                [
-                  { label: "Image", name: "image", widget: "image" },
-                  { label: "Text", name: "text", widget: "text" },
-                ],
-            }
-          - {
-              label: "Values",
-              name: "values",
-              widget: "object",
-              fields:
-                [
-                  { label: "Heading", name: "heading", widget: string },
-                  { label: "Text", name: "text", widget: "text" },
-                ],
-            }
+          {
+            label: Sections, 
+            name: sections,
+            widget: object, 
+            fields: [
+              {
+                label: Section 1,
+                name: section_1,
+                widget: object,
+                fields: [
+                ]
+              }
+            ]
+          } 
 
       - file: "site/content/livionkey-30/_index.md"
         label: "LivionKey-30"
         name: "livionkey-30"
         fields: [
-          {
-            label: Sections, 
-            name: sections, 
-            fields: [
-              {
-                label: Section 1,
-                name: section_1,
-                fields: [
-                  {
-                    label: Columns, 
-                    name: columns, 
-                    widget: object,
-                    fields: [
-                      {
-                        label: Image, 
-                        name: image, 
-                        widget: object,
-                        fields: [
-                          {label: Url, name: url, widget: string},
-                          {label: Alt, name: alt, widget: string},
-                          {label: Justify, name: justify: widget: string}
-                        ]
-                      },
-                      {
-                        label: Text,
-                        name: text,
-                        widget: object,
-                        fields: [
-                          {label: Heading, name: heading, widget: string},
-                          {label: Body, name: body, widget: text},
-                          {label: Justify, name: justify: widget: string}
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
+          # {
+          #   label: Sections, 
+          #   name: sections,
+          #   widget: object, 
+          #   fields: [
+          #     {
+          #       label: Section 1,
+          #       name: section_1,
+          #       widget: object,
+          #       fields: [
+          #         {
+          #           label: Columns, 
+          #           name: columns, 
+          #           widget: object,
+          #           fields: [
+          #             { label: Image, name: image, widget: image },
+          #             {
+          #               label: Text,
+          #               name: text,
+          #               widget: object,
+          #               fields: [
+          #                 {label: Heading, name: heading, widget: string},
+          #                 {label: Body, name: body, widget: text}
+          #               ]
+          #             }
+          #           ]
+          #         }
+          #       ]
+          #     },
+          #     {
+          #       label: Section 2,
+          #       name: section_2,
+          #       widget: object,
+          #       fields: [
+          #         {
+          #           label: Columns, 
+          #           name: columns, 
+          #           widget: object,
+          #           fields: [
+          #             {
+          #               label: Text,
+          #               name: text,
+          #               widget: object,
+          #               fields: [
+          #                 {label: Body, name: body, widget: text}
+          #               ]
+          #             }
+          #           ]
+          #         }
+          #       ]
+          #     },
+          #     {
+          #       label: Section 3,
+          #       name: section_3,
+          #       widget: object,
+          #       fields: [
+          #         {
+          #           label: Columns, 
+          #           name: columns, 
+          #           widget: object,
+          #           fields: [
+          #             {
+          #               label: Text,
+          #               name: text,
+          #               widget: object,
+          #               fields: [
+          #                 {label: Link, name: link, widget: string}
+          #               ]
+          #             }
+          #           ]
+          #         }
+          #       ]
+          #     },
+          #     {
+          #       label: Section 4,
+          #       name: section_4,
+          #       widget: object,
+          #       fields: [
+          #         {
+          #           label: Columns, 
+          #           name: columns, 
+          #           widget: object,
+          #           fields: [
+          #             {label: Image 1, name: image1, widget: image},
+          #             {label: Image 2, name: image2, widget: image},
+          #           ]
+          #         }
+          #       ]
+          #     }
+             
+          #   ]
+          # }
         ]
+      - file: "site/content/livionkey-30/info/_index.md"
+        label: "LivionKey-30, Tekniset tiedot"
+        name: "livionkey-30-info"
+        fields: []
+      - file: "site/content/livionkey-30/software/_index.md"
+        label: "LivionKey-30, Ohjelmisto"
+        name: "livionkey-30-software"
+        fields: []
+
+      - file: "site/content/livionkey-1/_index.md"
+        label: "LivionKey-1"
+        name: "livionkey-1"
+        fields: []
+      - file: "site/content/livionkey-1/info/_index.md"
+        label: "LivionKey-1, Tekniset tiedot"
+        name: "livionkey-1-info"
+        fields: []
+      - file: "site/content/livionkey-1/software/_index.md"
+        label: "LivionKey-1, Ohjelmisto"
+        name: "livionkey-1-software"
+        fields: []
+        
+      - file: "site/content/compare/_index.md"
+        label: "Vertaile"
+        name: "compare"
+        fields: []
+      - file: "site/content/support/_index.md"
+        label: "Tuki"
+        name: "support"
+        fields: []
+
       - file: "site/content/contact/_index.md"
         label: "Contact Page"
         name: "contact"

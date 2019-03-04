@@ -1,0 +1,19 @@
+<table class="table">
+    <thead>
+        <tr>
+            {{range.thead}}
+            <th>{{.}}</th>
+            {{end}}
+        </tr>
+    </thead>
+    <tbody>
+        {{ $rb := .row_break}}
+        {{ range $index, $element := .tbody }}
+        {{if and (and (gt $index 0) (eq (mod $index $rb) 0))}}
+        </tr>
+        <tr>
+            {{end}}
+            <td>{{.}}</td>
+            {{end}}
+    </tbody>
+</table>

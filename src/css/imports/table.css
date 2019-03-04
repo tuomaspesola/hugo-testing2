@@ -1,0 +1,18 @@
+.table{
+    font-size: 20pt;
+    margin: 0 auto;
+}
+.table thead{
+    font-weight: bold;
+}
+
+
+/* SCALING */
+@media screen and (min-width: 1087px) {
+    /* TOP ROW STYLING */
+    .row.top .table tr td{
+        background-color: #1c1c1c !important;
+        border: none;
+        color: #ffffff;
+    }
+}

@@ -26,37 +26,67 @@
   margin: 0 auto;
   padding: 4vh 4vw;
 }
+.row .columns .column .video-wrapper {
+  margin: 0 auto;
+  max-width: 900px;
+}
+.row .columns .column .video-wrapper .video {
+  height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+.row .columns .column .video-wrapper .video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 .row .columns .column .text-block {
   display: block;
   height: min-content;
   justify-items: center;
-  padding: 0.5rem 15vw;
+  padding: 1.5rem 15vw;
   position: relative;
   z-index: 3;
 }
 .row .columns .column .text-block .heading {
-  font-family: "PT Serif", serif;
+  font-family: "Quicksand", sans-serif;
   color: #484848;
-  font-size: 57pt;
+  font-size: 40pt;
   font-weight: bold;
   letter-spacing: 1.33pt;
   margin-bottom: 2rem;
+  margin-top: 4rem;
   text-align: center;
   text-transform: none;
 }
 
-.row .columns .column .text-block .content {
+.row .columns .column .text-block .content{
   color: #5d5d5d;
-  font-size: 28pt;
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 20pt;
   letter-spacing: 0.82pt;
   line-height: 41pt;
   text-align: center;
+}
+.row .columns .column .text-block .content .link,
+.row .columns .column .text-block .content .link:active,
+.row .columns .column .text-block .content .link:focus{
+  color: #20d7fc !important;
+  transition: all 0.3s;
+}
+.row .columns .column .text-block .content .link:hover{
+  margin-left: 20px;
 }
 
 .row .columns .column .text-block .button {
   font-family: "PT Sans Caption", sans-serif;
   font-size: 15pt;
   letter-spacing: 0.5pt;
+  margin-bottom: 2rem;
   padding: 2rem 3rem !important;
   text-transform: uppercase;
 }
@@ -80,25 +110,43 @@
   padding: 0;
 }
 .row.top .columns .column .text-block .heading {
-  color: #ffffff;
   border-bottom: 5px solid #20d7fc;
-  font-family: "PT Serif", serif;
-  font-size: 57pt;
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 40pt;
   font-weight: bold;
   letter-spacing: 3.71pt;
   text-align: left;
   margin-bottom: 1rem;
+  margin-top: 0;
   padding-bottom: 0.5rem !important;
 }
 .row.top .columns .column .text-block .content {
   color: #ffffff;
   font-family: "PT Sans Caption", sans-serif;
-  font-size: 16pt;
+  font-size: 13pt;
   font-weight: normal;
   letter-spacing: 0.53pt;
   line-height: 23pt;
-  padding: 0.5rem 0.2rem;
+  padding: 0.5rem 0.5rem;
   text-align: left;
+}
+
+
+/* TOP ROW: SINGLE COLUMN */
+.row.top .columns.single .text-block .heading {
+  text-align: center;
+  border-bottom: none;
+}
+
+
+/* CONTACT INFORMATION ROW */
+.contact-row{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding: 1rem;
 }
 
 /* SCALING */
