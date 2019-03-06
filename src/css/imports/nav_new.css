@@ -89,7 +89,7 @@
   display: grid;
   font-size: 8pt;
   font-weight: bold;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns:repeat(3, minmax(150px, 1fr));
   height: 1.8rem;
   justify-items: center;
   letter-spacing: 2.56pt;
@@ -99,12 +99,13 @@
 }
 
 .navbar .navbar-addon .addon-item {
-  padding: 0.25rem 1rem;
+  color: #ffffff;
+  padding: 0.25rem 1rem 0.25rem 1.5rem;
 }
 
 .navbar .navbar-addon .addon-item:hover,
 .navbar .navbar-addon .addon-item:active,
-.navbar .navbar-addon .addon-item.is-active {
+.navbar .navbar-addon .addon-item.is-active{
   color: #20d7fc;
   cursor: pointer;
 }
@@ -115,7 +116,7 @@
   display: inline-block;
   height: 8pt;
   width: 8pt;
-  margin: 0pt -15pt;
+  margin: 1pt -15pt;
   position: absolute;
 }
 

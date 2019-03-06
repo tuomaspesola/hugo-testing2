@@ -1,0 +1,60 @@
+<div class="row{{ if eq .i 1 }} top{{ end }}">
+  {{ if eq .i 1 }}
+  <div class="row-bg">
+    <svg width="100%" height="100%" viewBox="0 0 20 10" preserveAspectRatio="none">
+      <polygon fill="#1c1c1c" stroke-width="0" points="0,6 20,10 20,0 0,0" />
+    </svg>
+  </div>
+  {{ end }}
+  <div class="columns is-centered{{if eq (len .columns) 1}} single{{ end }}">
+    {{ range.columns }}
+    <div class="column">
+      <!-- image -->
+      {{if isset . "image"}}
+      <img src="{{ .image }}" alt="{{ .alt }}" />
+      {{ end }}
+
+      <!-- embedded link -->
+      {{if isset . "embedded"}}
+      <div class="video-wrapper">
+        <div class="video">
+          <iframe src="{{.embedded}}" allowfullscreen title="YouTube Video"></iframe>
+        </div>
+      </div>
+      {{ end }}
+
+      {{ if and (and (isset . "thead") (isset . "tbody"))}}
+      {{partial "table" (dict "thead" .thead "tbody" .tbody "row_break" 3 )}}
+      {{ end }}
+
+      <!-- text -->
+      {{ if or (or (isset . "heading") (isset . "body") ) }}
+      <div class="text-block">
+        {{ if isset . "heading"}}
+        <h1 class="heading">{{.heading}}</h1>
+        {{ end }}
+
+        {{if isset . "body"}}
+        <div class="content">
+          {{.body | markdownify}}
+        </div>
+        {{ end }}
+
+        {{if isset . "list"}}
+        <div class="content">
+          {{partial "table" (dict "tbody" .list "row_break" 2 )}}
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      <!-- button -->
+      {{ if isset . "link"}}
+      <div class="text-block has-text-centered">
+        <a href="{{.link}}" class="button is-success is-rounded">Ota yhteyttä</a>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>

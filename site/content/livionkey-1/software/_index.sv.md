@@ -4,12 +4,12 @@ sections:
   section_1:
     columns:
       text:
-        heading: Ohjelmisto
+        heading: Programvara
   section_2:
     columns:
       text:
         body: >
-          Avainautomaatin omistajana voit hallita automaattia selainpohjaisella ohjelmistollamme.
+          Som ägare av nyckelautomaten kan du styra den med vårt webb-baserad applikation.
   section_3:
     columns:
       image:
@@ -19,7 +19,7 @@ sections:
     columns:
       text:
         body: >
-          Ohjelmistomme avulla voit tarkastella automaatin toimintaa etänä, vaikka niitä olisi käytössä useitakin.
+          Med hjälp av vår applikation kan du övervaka automaten på distans, även om flera av dem skulle vara i bruk.
   section_5:
     columns:
       image:
@@ -29,5 +29,5 @@ sections:
     columns:
       text:
         body: >
-          Voit tehdä helposti varauksia.
+          Du kan lätt göra reservationer.
 ---

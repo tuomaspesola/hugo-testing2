@@ -1,0 +1,10 @@
+<div class="buttons {{if isset . `is_mobile`}}buttons-mobile{{end}}">
+    <div class="select is-rounded is-small">
+        <select class="language-select">
+            <option>{{ .base.Site.Language.LanguageName }}</option>
+            {{ range .base.Translations }}
+            <option value="{{.Permalink}}">{{ .Site.Language.LanguageName }}</option>
+            {{ end}}
+        </select>
+    </div>
+</div>

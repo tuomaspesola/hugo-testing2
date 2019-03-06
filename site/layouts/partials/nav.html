@@ -1,23 +1,51 @@
-<nav
-  class="overflow-x-scroll overflow-x-visible-ns flex items-start bg-black divider-black relative"
->
-  <!-- Logo -->
-  <a href="/" class="pa3 db mr4 h-100 w3 flex-none">
-    <img
-      src="/img/livionkey-logo.svg"
-      alt="Kaldi logo"
-      class="br0 db mb0 w-100"
-    />
-  </a>
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item navbar-logo" href="/">
+      <img src="/img/livionkey-logo.svg" />
+    </a>
 
-  <!-- Primary Nav -->
-  <ul class="flex b grey-3 ttu">
-    <li><a href="/products" class="pa3 no-underline db">Products</a></li>
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+      data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
 
-    <li><a href="/values" class="pa3 no-underline db">Values</a></li>
+    {{partial "language" (dict "base" . "is_mobile" true)}}
+  </div>
 
-    <li><a href="/post" class="pa3 no-underline db">Blog</a></li>
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      {{ $page := . }}
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL | relLangURL }}"
+        class="navbar-item{{ if in (lower $page.URL) (lower (.URL | relLangURL)) }} is-active{{ end }}">{{i18n .Name }}</a>
+      {{ end }}
+    </div>
 
-    <li><a href="/contact" class="pa3 no-underline db">Contact</a></li>
-  </ul>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        {{partial "language" (dict "base" .)}}
+      </div>
+    </div>
+  </div>
+
+  {{if or (or (eq .Type "livionkey-30") (eq .Type "livionkey-1"))}}
+  {{ $.Scratch.Set "menu_range" .Site.Menus.livionkey30 }}
+
+  {{if eq .Type "livionkey-1"}}
+  {{ $.Scratch.Set "menu_range" .Site.Menus.livionkey1 }}
+  {{end}}
+
+  <div class="navbar-addon">
+    {{ $page := . }}
+    <a href="{{.Type | relLangURL}}"
+      class="addon-item{{ if eq (printf `%s/` (lower (.Type | relLangURL))) (lower $page.URL) }} is-active{{ end }}">{{i18n "introduction"}}</a>
+    {{ range $.Scratch.Get "menu_range" }}
+    <a href="{{ .URL | relLangURL }}"
+      class="addon-item{{ if eq (lower (.URL | relLangURL)) (lower $page.URL) }} is-active{{ end }}">
+      {{ i18n .Name}}</a>
+    {{ end }}
+  </div>
+  {{ end }}
 </nav>

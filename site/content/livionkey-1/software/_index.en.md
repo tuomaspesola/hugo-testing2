@@ -4,12 +4,12 @@ sections:
   section_1:
     columns:
       text:
-        heading: Ohjelmisto
+        heading: Software
   section_2:
     columns:
       text:
         body: >
-          Avainautomaatin omistajana voit hallita automaattia selainpohjaisella ohjelmistollamme.
+          As the key box owner, you can control the key box with our browser-based software.
   section_3:
     columns:
       image:
@@ -19,7 +19,7 @@ sections:
     columns:
       text:
         body: >
-          Ohjelmistomme avulla voit tarkastella automaatin toimintaa etänä, vaikka niitä olisi käytössä useitakin.
+          With our software system, you can monitor the key box remotely, even if you are using multiple boxes.
   section_5:
     columns:
       image:
@@ -29,5 +29,5 @@ sections:
     columns:
       text:
         body: >
-          Voit tehdä helposti varauksia.
+          You can easily make reservations.
 ---

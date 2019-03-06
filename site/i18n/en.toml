@@ -1,0 +1,17 @@
+[livionkey30]
+  other = "LivionKey-30"
+[livionkey1]
+  other = "LivionKey-1"
+[compare]
+  other = "Compares"
+[support]
+  other = "Support"
+[contact]
+  other = "Contact"
+
+[introduction]
+  other = "Introduction"
+[tech_specs]
+  other = "Tech Specs"
+[software]
+  other = "Software"

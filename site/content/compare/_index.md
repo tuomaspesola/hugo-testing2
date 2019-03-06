@@ -1,6 +1,5 @@
 ---
-
-type: livionkey-1
+type: compare
 sections:
   section_1:
     columns:

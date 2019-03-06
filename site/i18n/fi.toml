@@ -1,0 +1,17 @@
+[livionkey30]
+  other = "LivionKey-30"
+[livionkey1]
+  other = "LivionKey-1"
+[compare]
+  other = "Vertaa"
+[support]
+  other = "Tuki"
+[contact]
+  other = "Yhteystiedot"
+  
+[introduction]
+  other = "Esittely"
+[tech_specs]
+  other = "Tekniset tiedot"
+[software]
+  other = "Ohjelmisto"

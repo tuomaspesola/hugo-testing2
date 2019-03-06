@@ -1,6 +1,69 @@
 baseurl = "/"
-languageCode = "en-us"
-title = "Homepage"
+title = "{TITLE}"
+IsMultiLingual = true
+disableAliases = true
+DefaultContentLanguage = "fi"
 
-[blackfriday]
-  extensions = ["hardLineBreak"]
+[languages]
+  [languages.fi]
+    title = "Livion"
+    LanguageName = "FI"
+    weight = 1
+  [languages.sv]
+    title = "Livion"
+    LanguageName = "SV"
+    weight = 2
+  [languages.en]
+    title = "Livion"
+    LanguageName = "EN"
+    weight = 3
+
+[menu]
+  [[menu.main]]
+    identifier = "livionkey30"
+    name = "livionkey30"
+    url = "/livionkey-30/"
+    weight = -50
+  [[menu.main]]
+    identifier = "livionkey1"
+    name = "livionkey1"
+    url = "/livionkey-1/"
+    weight = -40
+  [[menu.main]]
+    identifier = "compare"
+    name = "compare"
+    url = "/compare/"
+    weight = -30
+  [[menu.main]]
+    identifier = "support"
+    name = "support"
+    url = "/support/"
+    weight = -20
+  [[menu.main]]
+    identifier = "contact"
+    name = "contact"
+    url = "/contact/"
+    weight = -10
+
+  
+  [[menu.livionkey30]]
+    identifier = "livionkey30_info"
+    name = "tech_specs"
+    url = "/livionkey-30/info/"
+    weight = -8
+  [[menu.livionkey30]]
+    identifier = "livionkey30_software"
+    name = "software"
+    url = "/livionkey-30/software/"
+    weight = -7
+  
+  [[menu.livionkey1]]
+    identifier = "livionkey1_info"
+    name = "tech_specs"
+    url = "/livionkey-1/info/"
+    weight = -5
+  [[menu.livionkey1]]
+    identifier = "livionkey1_software"
+    name = "software"
+    url = "/livionkey-1/software/"
+    weight = -4

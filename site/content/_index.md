@@ -1,4 +1,5 @@
 ---
+type: index
 sections:
   section_1:
     columns:

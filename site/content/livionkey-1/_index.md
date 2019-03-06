@@ -35,18 +35,14 @@ sections:
     columns:
       text:
         body: >
-          LivionKey-1 Single Box on avainautomaatti, jossa nykyaikainen teknologia auttaa arjen pyörityksessä. Avainautomaatti sisältää luukullisen lokeron, johon mahtuu 1-3 avainta riippuen avaimen koosta.
-  section_7:
-    columns:
-      text:
-        body: >
+          LivionKey-1 Single Box on avainautomaatti, jossa nykyaikainen teknologia auttaa arjen pyörityksessä. Avainautomaatti sisältää luukullisen lokeron, johon mahtuu 1-3 avainta riippuen avaimen koosta.<br /><br />
           Sitä käytetään hallintapalvelun avulla, joka on selaimen välityksellä käytettävä ohjelmisto. Avainautomaatin omistajana voit sen avulla tarkastella ja hallita automaatin toimintaa etänä, vaikka niitä olisi käytössä useitakin.
-  section_8:
+  section_7:
     columns:
       image: 
         image: /img/keybox1-software.jpg 
         alt: livionKeyBox1Software
-  section_9:
+  section_8:
     columns:
       text:
         body: >
