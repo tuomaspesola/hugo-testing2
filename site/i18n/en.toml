@@ -8,7 +8,6 @@
   other = "Support"
 [contact]
   other = "Contact"
-
 [introduction]
   other = "Introduction"
 [tech_specs]
@@ -18,3 +17,16 @@
 
 [news]
   other= "News"
+
+[contact_us]
+  other = "Contact us"
+[name]
+  other = "Name"
+[email]
+  other = "Email"
+[email_description]
+  other = "Email address you want us to respond"
+[message]
+  other = "Message"
+[send]
+  other = "Send"

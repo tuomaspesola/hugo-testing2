@@ -8,7 +8,6 @@
   other = "Support"
 [contact]
   other = "Kontaktuppgifter"
-
 [introduction]
   other = "Översikt"
 [tech_specs]
@@ -18,3 +17,16 @@
 
 [news]
   other= "Nyheter"
+
+[contact_us]
+  other = "Kontakt oss"
+[name]
+  other = "Namn"
+[email]
+  other = "Mejla"
+[email_description]
+  other = "E-postadress du vill att vi ska svara"
+[message]
+  other = "Meddelande"
+[send]
+  other = "Skicka"

@@ -1,3 +1,4 @@
+
 [livionkey30]
   other = "LivionKey-30"
 [livionkey1]
@@ -8,7 +9,6 @@
   other = "Tuki"
 [contact]
   other = "Yhteystiedot"
-  
 [introduction]
   other = "Esittely"
 [tech_specs]
@@ -17,4 +17,17 @@
   other = "Ohjelmisto"
 
 [news]
-  other= "Uutiset"
+  other = "Uutiset"
+
+[contact_us]
+  other = "Ota yhteyttä"
+[name]
+  other = "Nimi"
+[email]
+  other = "Sähköposti"
+[email_description]
+  other = "Sähköposti johon haluat meidän vastaavan"
+[message]
+  other = "Viesti"
+[send]
+  other = "Lähetä"

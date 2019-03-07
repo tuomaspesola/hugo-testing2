@@ -22,28 +22,28 @@
     <div class="columns is-centered single">
         <div class="column">
             <form name="contact" class="form" method="POST" data-netlify-recaptcha="true" data-netlify="true">
-                <h3 class="title">Ota yhteyttä</h3>
+                <h3 class="title">{{i18n "contact_us"}}</h3>
                 <div class="field">
-                    <label class="label">Name</label>
+                    <label class="label">{{i18n "name"}}</label>
                     <div class="control">
-                        <input class="input" type="text" name="name" placeholder="Name">
+                        <input class="input" type="text" name="name" placeholder="{{i18n `name`}}">
                     </div>
                 </div>
                 <div class="field">
-                    <label class="label">Email</label>
+                    <label class="label">{{i18n "email"}}</label>
                     <div class="control">
-                        <input class="input" type="text" name="email" placeholder="Contact email">
+                        <input class="input" type="text" name="email" placeholder="{{i18n `email`}}">
                     </div>
-                    <p class="help">Email address you want us to respond to</p>
+                    <p class="help">{{i18n "email_description"}}</p>
                 </div>
                 <div class="field">
-                    <label class="label">Message</label>
+                    <label class="label">{{i18n "message"}}</label>
                     <div class="control">
-                        <textarea class="textarea" name="message" placeholder="Message"></textarea>
+                        <textarea class="textarea" name="message" placeholder="{{i18n `message`}}"></textarea>
                     </div>
                 </div>
                 <div data-netlify-recaptcha="true"></div>
-                <button type="submit" class="button is-success is-rounded">Send</button>
+                <button type="submit" class="button is-success is-rounded">{{i18n "send"}}</button>
             </form>
         </div>
     </div>
