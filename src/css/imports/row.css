@@ -19,7 +19,7 @@
 }
 
 .row .columns .column {
-  display: grid;
+  display: block;
   padding: 1vh 3vw;
 }
 .row .columns .column img {
@@ -30,6 +30,7 @@
 .row .columns .column .video-wrapper {
   margin: 0 auto;
   max-width: 900px;
+  width: auto;
 }
 .row .columns .column .video-wrapper .video {
   height: 0;
@@ -145,7 +146,7 @@
 .contact-row{
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
   justify-items: center;
   padding: 1rem;
 }
@@ -156,11 +157,14 @@
     height: 50%;
   }
 
-  .row .columns {
+  .row:not(.video-row) .columns {
     display: grid !important;
     grid-template-columns: 1fr !important;
     justify-items: center !important;
     margin: 0;
+  }
+  .row.video-row .columns{
+    padding: 0rem 2rem;
   }
 
   /* SCALING: TOP ROW STYLING  */

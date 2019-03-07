@@ -24,7 +24,7 @@ sections:
     columns:
       text:
         body: >
-          Asiakas pystyisi myös palauttamaan avaimen samaan avainlaatikkoon, jolloin mökkejä vuokraava toimija saisi tiedon milloin avainlaatikkoa on käytetty.
+          Asiakas pystyisi myös palauttamaan avaimen samaan avainlaatikkoon, jolloin mökkejä vuokraava toimija saisi tiedon milloin avainlaatikkoa on käytetty.<br /><br />
           Tämän avulla hän tietäisi milloin asiakas on tullut ja milloin lähtenyt, jolloin hän voisi suunnitella mm. mökkien tarkastuksen tai siivoamistyöt paremmin.
   section_5:
     columns:

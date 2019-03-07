@@ -24,7 +24,7 @@ sections:
     columns:
       text:
         body: >
-          The client could also return the keys in the same key box and the cottage owner could be notified of when the box had been used.<br />
+          The client could also return the keys in the same key box and the cottage owner could be notified of when the box had been used.<br /><br />
           This tells the owner when the client has arrived and left, and the owner can plan cottage inspections and cleaning more efficiently.
   section_5:
     columns:
