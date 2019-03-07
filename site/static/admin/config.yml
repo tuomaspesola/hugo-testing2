@@ -15,30 +15,49 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Intro Blurb", name: "description", widget: "text" }
       - { label: "Image", name: "image", widget: "image", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "pages"
-    label: "Pages"
-    files:
-      - file: "site/content/_index.md"
-        label: "Home Page"
-        name: "home"
-        fields: []
-      - file: "site/content/livionkey-30/_index.md"
-        label: "LivionKey-30"
-        name: "livionkey-30"
-        fields: []
-      - file: "site/content/livionkey-1/_index.md"
-        label: "LivionKey-1"
-        name: "livionkey-1"
-        fields: []
-      - file: "site/content/compare/_index.md"
-        label: "Vertaile"
-        name: "compare"
-        fields: []
-      - file: "site/content/support/_index.md"
-        label: "Tuki"
-        name: "support"
-        fields: []
-      - file: "site/content/contact/_index.md"
-        label: "Contact Page"
-        name: "contact"
-        fields: []
+  # - name: "pages"
+  #   label: "Pages"
+  #   files:
+  #     - file: "site/content/_index.md"
+  #       label: "Home Page"
+  #       name: "home"
+  #       fields: [
+  #         { label: Heading, name: heading1, widget: string},
+  #         { label: Body, name: body1, widget: text}
+  #         ]
+
+  #     - file: "site/content/livionkey-30/_index.md"
+  #       label: "LivionKey-30"
+  #       name: "livionkey-30"
+  #       fields: [
+  #         { 
+  #           label: Sections, 
+  #           name: sections, 
+  #           widget: list,
+  #           field: { 
+  #             label: Columns, 
+  #             name: columns, 
+  #             widget: list,
+  #             fields: [
+  #               {label: Image, name: image, widget: image},
+  #               {label: Text block, name: heading, widget: string}
+  #             ]
+  #           }
+  #         }
+  #       ]
+  #     - file: "site/content/livionkey-1/_index.md"
+  #       label: "LivionKey-1"
+  #       name: "livionkey-1"
+  #       fields: []
+  #     - file: "site/content/compare/_index.md"
+  #       label: "Vertaile"
+  #       name: "compare"
+  #       fields: []
+  #     - file: "site/content/support/_index.md"
+  #       label: "Tuki"
+  #       name: "support"
+  #       fields: []
+  #     - file: "site/content/contact/_index.md"
+  #       label: "Contact Page"
+  #       name: "contact"
+  #       fields: []

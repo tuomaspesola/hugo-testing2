@@ -2,33 +2,33 @@
 
 type: livionkey-30
 sections:
-  section_1:
+  - section:
     columns:
-      image: 
+      image:
         image: /img/keybox30.png
-        alt: keybox30.png
+        alt: keybox30
       text:
         heading: LivionKey-30
         body: >
           Avainautomaatin tarina on saanut alkunsa tarpeesta, jossa asuntoja ja mökkejä suuria määriä vuokraavat toimijat ovat kokeneet avainten luovuttamisen ja vastaanottamisen aikaa ja resursseja vievänä vaiheena. Niinpä kehitimme sitä varten älykkään ja etähallittavan avainautomaatti ratkaisun.
-  section_2:
+  - section:
     columns:
       text:
         body: >
           LivionKey-30 Carousel on avainautomaatti, jossa yhdistyvät sekä nykyaikainen teknologia että helppokäyttöisyys. Avainautomaatti sisältää mahdollisuuden 30 yhtäaikaisen avaimen säilyttämiseen.
-  section_3:
+  - section:
     columns:
       text: 
         link: /contact
-  section_4:
+  - section:
     columns:
-      image1: 
+      image: 
         image: /img/livion-box-example.png 
         alt: livionBoxExample
-      image2: 
+      image: 
         image: /img/livion-software.jpg
         alt: livionSoftware 
-  section_5:
+  - section:
     columns:
       text:
         heading: Etähallinta

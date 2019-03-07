@@ -18,4 +18,34 @@
     {{partial "person_card" .}}
     {{ end }}
 </div>
+<div class="row">
+    <div class="columns is-centered single">
+        <div class="column">
+            <form name="contact" class="form" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+                <h3 class="title">Ota yhteyttä</h3>
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                        <input class="input" type="text" name="name" placeholder="Name">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input" type="text" name="email" placeholder="Contact email">
+                    </div>
+                    <p class="help">Email address you want us to respond to</p>
+                </div>
+                <div class="field">
+                    <label class="label">Message</label>
+                    <div class="control">
+                        <textarea class="textarea" name="message"></textarea>
+                    </div>
+                </div>
+                <div data-netlify-recaptcha="true"></div>
+                <button type="submit" class="button is-success is-rounded">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
 {{ end }}

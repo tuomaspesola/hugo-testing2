@@ -19,6 +19,7 @@
 }
 
 .row .columns .column {
+  display: grid;
   padding: 1vh 3vw;
 }
 .row .columns .column img {

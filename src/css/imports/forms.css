@@ -1,0 +1,23 @@
+.form {
+    display: grid;
+    justify-self: center;
+    margin-top: 2rem;
+    max-width: 80%;
+    position: relative;
+    width: 50vw;
+}
+
+.form .title{
+    text-align: center;
+}
+
+.form .button{
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 15pt;
+  letter-spacing: 0.5pt;
+  line-height: 0pt;
+  padding: 2rem 3rem !important;
+  width: auto;
+  display: flex;
+  margin-left: auto;
+}

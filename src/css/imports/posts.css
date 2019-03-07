@@ -1,0 +1,44 @@
+.posts{
+    padding: 0rem 10vw;
+}
+.posts .posts-heading{
+    font-family: "Quicksand", sans-serif;
+    color: #484848;
+    font-size: 40pt;
+    font-weight: bold;
+    letter-spacing: 1.33pt;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+
+
+.post{
+    margin-bottom: 2rem;
+}
+.post .post-title{
+    align-items: center;
+    display: grid;
+    font-family: "Quicksand", sans-serif;
+    grid-template-columns: 8fr 2fr;
+    padding: 0.5rem 1rem;
+}
+.post .post-title .subtitle{
+    font-weight: bold;
+    margin: 0;
+}
+.post .post-title .date{
+    border-radius: 4px;
+    color: #484848;
+    font-weight: bold;
+    text-align: center;
+}
+.post .post-body{
+    font-family: "Quicksand", sans-serif;
+    padding: .5rem 2rem 1rem 2rem;
+    line-height: 21pt;
+}
+.post .post-body ol{
+    padding: 1rem 1rem;
+}

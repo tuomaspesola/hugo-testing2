@@ -12,3 +12,5 @@
 @import "./imports/row";
 @import "./imports/table";
 @import "./imports/person_card";
+@import "./imports/posts";
+@import "./imports/forms";
